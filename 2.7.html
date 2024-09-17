@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.7</title>
+    
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box-static, .box-relative1, .box-relative2, .box-relative3, .box-absolute, .box-fixed {
+            color: white;
+        }
+        .box-static {
+            background-color: blueviolet;
+            width: 150px;
+            height: 100px;
+        }
+        .box-relative1 {
+            background-color: darkred;
+            position: relative;
+            width: 150px;
+            height: 100px;
+        }
+        .box-relative2 {
+            background-color: peru;
+            position: relative;
+            width: 150px;
+            height: 100px;
+            bottom: 30px;
+            left: 30px;
+        }
+        .box-relative3 {
+            background-color: indianred;
+            position: relative;
+            width: 600px;
+            height: 400px;
+        }
+        .box-absolute {
+            background-color: indigo;
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            right: 0;
+            bottom: 80px;
+        }
+        .box-fixed {
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-static">It's a static div!</div>
+
+    <div class="box-relative1">It's a relative div!</div>
+    <div class="box-relative2">It's a relative div!</div>
+
+    <div class="box-relative3">
+        It's a relative div!
+        <div class="box-absolute">It's an absolute div with relative parent!</div>
+    </div>
+
+    <div class="box-fixed">It's a fixed div!</div>
+</body>
+</html>
